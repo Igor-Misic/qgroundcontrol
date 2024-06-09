@@ -49,7 +49,7 @@ Item {
 
         var points = []
         const height = minRadiusPixels / 8
-        for (var i = 0; i < obstacleDistance._rangesLen; ++i) {
+        for (var i = 1; i <= obstacleDistance._rangesLen + 1; ++i) {
             const deg = i * obstacleDistance._incrementDeg
             const rad =  deg * Math.PI / 180.0
             const m = obstacleDistance._ranges[obstacleDistance._degToRangeIdx(deg, true)] / 100.0
